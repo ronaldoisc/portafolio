@@ -1,11 +1,11 @@
 :root {
-    --main-font: sans-serif;
+    --main-font: 'Raleway', sans-serif; ;
     --font-size: 16rx;
     --main-color: #f7df1e;
     --seconday-color: rgb(146, 210, 1);
     --main-modal-color: rgb(247, 222, 30, 0.85);
     --second-modal-color: rgba(14, 16, 18, 0.85);
-    --grayColor: rgb(201, 194, 194);
+    --grayColor: rgb(172, 169, 169);
 }
 
 html {
@@ -39,16 +39,17 @@ h3 {
 
 .btn {
    
-    padding: 0.9rem;
-    /* width: 30%; */
+    padding: 0.8rem;
+   
     text-decoration: none;
     color: var(--second-modal-color);
-    border-radius: 2rem;
+    border-radius: 1rem;
     display: inline-block;
    
 }
 .btn-contact{
     background-color: var(--main-color);
+    /* margin-bottom: 1rem; */
 }
 
 
@@ -65,25 +66,20 @@ h3 {
 }
 .about{
     padding: 1rem;
-    background-color: white;
+    background-color: var(--main-color);
+    /* background-color: var(--grayColor); */
 }
 
 .my-profile img {
     width:96%; 
 }
 
-.my-profile-description{
-    background-color: var(--main-color);
-    padding: 1.6rem;
-   
- 
-}
 
 .my-profile-description p {
     line-height: 2rem; 
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--main-font);
     text-align: justify;
-    color: black;
+ 
 }
 
 
@@ -110,9 +106,10 @@ h3 {
     display: flex;
     flex-flow: column wrap;
     padding: 1rem;
-    letter-spacing: 0.7rem;
-    font-size:1.5rem;
+    letter-spacing: 0.2rem;
+    font-size:1.8rem;
     color: white;
+    font-family: var(--main-font);
 }
 
 
@@ -202,8 +199,8 @@ h3 {
 }
 
 .seccion .title{
-    border-top: thin solid var(--seconday-color);
-    border-bottom: thin solid var(--seconday-color);
+    border-top:  solid var(--seconday-color);
+    border-bottom: solid var(--seconday-color);
     margin: 2rem auto;
     padding: 0.5rem 1rem;
     width: 250px;
@@ -217,7 +214,7 @@ h3 {
     position: fixed;
     right: 2vh;
     bottom: 1vh;
-    background-color: var(--seconday-color);
+    background-color: var(--main-color);
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -265,7 +262,7 @@ h3 {
     padding: 0.8rem;
 }
 .card2 figcaption p {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: var(--main-font);
     font-size: 1rem;
     line-height: 1.5rem;
 }
@@ -356,6 +353,7 @@ h3 {
 }
 
 .footer {
+  
     background-color: rgb(36, 31, 31);
     color: white;
     padding: 4.5rem;
@@ -365,23 +363,57 @@ h3 {
 
 .content-footer {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
-.list-social a {
-    display: inline-block;
-    margin-right: 1rem;
+
+.list-social{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.list-social a{
     color: white;
+    margin-right: 1rem;
 }
-
-
+.social-media-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+.social-media-footer a{
+    color: white;
+    margin-top: 1rem;
+}
+.footer-img img{
+    width: 40%;
+}
+.footer-copy{
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
 
 .btn-cv {
-   
-    background-color: rgb(146, 210, 1);
-    
+    background-color:white;
 }
 .btn-show{
-    background-color: rgb(146, 210, 1);
+    background-color: var(--seconday-color);
+    color: white;
+}
+.menu-footer{
+    display: flex;
+    flex-flow: column wrap;
+}
+.menu-footer a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: transform .5s;
+    cursor: pointer;
     color: white;
 }
