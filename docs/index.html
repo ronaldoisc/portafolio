@@ -18,21 +18,35 @@
 
 <body>
     <header class="header" data-dark>
+          <div class="header-menu-mobile">
 
-        <a href="/">
-            <h2><i class="fas  fa-code"></i> Ronaldo Dev</h2>
-        </a>
-        <nav class="menu">
-            <a class="btn-1"  href="#inicio">Main</a>
-            <a class="btn-2" href="#seccion1" id="sobre-mi">About me</a>
-            <a class="btn-3" href="#seccion2">Skills</a>
-            <a class="btn-4" href="#seccion3">Projects</a>
-            <a class="btn-5" href="#seccion4">CV</a>
-            <a class="btn-6" href="#seccion5">Contact</a>
-
-            <a href="#" class="btnDark">🌙</a>
-        </nav>
-
+            <div>
+                <a href="/">
+                    <h2><i class="fas  fa-code"></i> Ronaldo</h2>
+                  </a>
+            </div>
+              
+              <div>
+                <a href="#navegacion" class="panel-btn">
+                    <img class="icono" src="assets/barras.svg" alt="icono menu">
+                </a>
+              </div>
+               
+          </div>
+ 
+            <nav class="menu">
+                <a class="btn-1"  href="#inicio">Main</a>
+                <a class="btn-2" href="#seccion1" id="sobre-mi">About me</a>
+                <a class="btn-3" href="#seccion2">Skills</a>
+                <a class="btn-4" href="#seccion3">Projects</a>
+                <a class="btn-5" href="#seccion4">CV</a>
+                <a class="btn-6" href="#seccion5">Contact</a>
+    
+                <a href="#" class="btnDark">🌙</a>
+            </nav>
+    
+       
+        
     </header>
     <div class="botones-flotantes">
         <button class="scroll-boton btn-no-visible">
@@ -50,31 +64,31 @@
                         <div class="hero-title animate__animated animate__zoomIn">
                             <h1>WELCOME TO MY PERSONAL PORTFOLIO</h1>
                         </div>
-                        <a href="#seccion5" class="btn">Contact me</a>
+                        <a href="#seccion5" class="btn btn-contact">Contact me</a>
                     </div>
                 </div>
             </div>
         </section>
         <section id="seccion1" class="seccion">
             <h1 class="title title2 animate__animated">ABOUT ME</h1>
-            <div class="about">
+            <div class="about ">
 
                 
                 <div class="my-profile-description">
                
-                    <h1>Hello, I'm Ronaldo Tellez Leal</h1>
-                    <h4>Jr Web Developer</h4>
+                    <h1>Junior <strong>Frontend</strong> Web Developer</h1>
+                    
                     <p>
                         I'm from Teziutlan Puebla, the area that I enjoy more is web development. My favorite programming language is Javascript, I consider myself autodidact and responsable,
-                        because In my free time I carry on studying to improve my programming skills.
+                         In my free time I continue studying to improve my programming skills.
                          <br>
-                        I enjoy to develop the mockup and interectivity of web interfaces, also the optimization to great performance
+                        I enjoy to develop the mockup and interectivity of web interfaces, also the optimization to great performance.
 
                          
                     </p>
                 </div>
                 <div class="my-profile">
-                    <img src="assets/img.jpg" class="img-circle" alt="Mi foto" height="" width="" />
+                    <img src="assets/foto.jpg" class="img-circle" alt="Mi foto" height="" width="" />
                 </div>
             </div>
         </section>
@@ -214,7 +228,7 @@
                         <h3>GifExpert</h3>
                         <p> In this web App I'm consuming a gif rest Api. I used React js</p>
                       
-                         <a target="_blank" href="https://ronaldoisc.github.io/react-gifexpertapp/">Ver app</a>
+                         <a target="_blank" href="https://ronaldoisc.github.io/react-gifexpertapp/" class="btn">Ver app</a>
                     </figcaption>
                 </figure>
                 
@@ -224,10 +238,10 @@
         </section>
         <section id="seccion4" class="seccion">
             <h2 class="title title5 animate__animated">CV</h2>
-            <div class="buttonCv">
-                <a href="">DOWNLOAD CV</a>
+        
+                <a class="btn btn-cv" href="">DOWNLOAD CV</a>
 
-            </div>
+        
         </section>
         <section id="seccion5" class="seccion">
             <h2 class="title title6 animate__animated">CONTACT</h2>
@@ -283,6 +297,7 @@
     </main>
 
     <script src="js/index_dom.js" type="module"></script>
+  
 </body>
 
 </html>
