@@ -1,12 +1,13 @@
+
 const $title2=document.querySelector('.title2');
 const $title3=document.querySelector('.title3');
 const $title4=document.querySelector('.title4');
 const $title5=document.querySelector('.title5');
-const $title6=document.querySelector('.title6');
+
 
 export default function efectAnimation(){
     document.addEventListener("click",e=>{
-        if(e.target.matches(".btn-2")){
+        if(e.target.matches(".btn-2") || e.target.matches(".btn-contact")){
                 makeAnimation($title2,"animate__bounceInLeft",200,700)
         }else
         if(e.target.matches(".btn-3")){
@@ -17,10 +18,8 @@ export default function efectAnimation(){
         }else
         if(e.target.matches(".btn-5")){
                 makeAnimation($title5,"animate__bounceInLeft",600,1500)
-        }else
-        if(e.target.matches(".btn-6")){
-                makeAnimation($title6,"animate__bounceInLeft",600,1500)
         }
+
 
       });
 }

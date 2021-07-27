@@ -1,8 +1,12 @@
 :root {
     --main-font: 'Raleway', sans-serif; ;
     --font-size: 16rx;
+    --color-primary:#224885;
     --main-color: #f7df1e;
-    --seconday-color: rgb(146, 210, 1);
+    --color-fondo:#212529;
+    /* --main-color: #f7df1e; */
+    /* --seconday-color: rgb(146, 210, 1); */
+    --seconday-color: white;
     --main-modal-color: rgb(247, 222, 30, 0.85);
     --second-modal-color: rgba(14, 16, 18, 0.85);
     --grayColor: rgb(172, 169, 169);
@@ -32,9 +36,12 @@ body {
 .text-center{
     text-align: center;
 }
+h3{
+    font-size: 1.2rem;
+}
 
-h3 {
-    font-size: 1.5rem;
+h1,h5{
+    font-size: calc(1.2rem + 1.5vw);
 }
 
 .btn {
@@ -43,13 +50,13 @@ h3 {
    
     text-decoration: none;
     color: var(--second-modal-color);
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     display: inline-block;
    
 }
 .btn-contact{
-    background-color: var(--main-color);
-    /* margin-bottom: 1rem; */
+    background-color: var(--color-primary);
+
 }
 
 
@@ -57,30 +64,43 @@ h3 {
     .about {
         display: flex;
         align-items: center;
+        height: 500px;
       
         
     }
     .about>* {
-        flex: 0 0 calc(48%);
+        flex: 0 0 calc(50%);
+    }
+    .about > .my-profile-description p {
+        text-align: left;
     }
 }
 .about{
-    padding: 1rem;
-    background-color: var(--main-color);
+    padding: 3rem;
+    background-color: var(--color-fondo);
 }
 
 .my-profile img {
-    width:96%; 
+    width:100%; 
 }
 
-
 .my-profile-description p {
-    /* line-height: 1.2rem;  */
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 300;
     font-family: var(--main-font);
-    /* text-align: justify; */
+    color: white;
+  
  
 }
 
+.my-profile-description h1{
+    color: white;
+   
+}
+.my-profile-description h1 > strong{
+    color: var(--color-primary);
+}
 
 .hero-image {
     background-image: url("../assets/fondo3.jpg");
@@ -111,7 +131,10 @@ h3 {
     font-family: var(--main-font);
 }
 
-
+.hero-title h4 >span{
+    color: var(--main-color);
+    border-bottom: solid var(--main-color);
+}
 /*header*/
 
 .header {
@@ -120,6 +143,7 @@ h3 {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
+    
    
    
 }
@@ -142,6 +166,7 @@ h3 {
   
 }
 .menu a {
+    
     text-decoration: none;
     display: block;
     padding: 1rem;
@@ -191,6 +216,7 @@ h3 {
     letter-spacing: 2px;
     font-size: 1.2rem;
     padding-top: 4rem;
+  
    
     width: 100%;
     min-height: 100vh;
@@ -198,8 +224,8 @@ h3 {
 }
 
 .seccion .title{
-    border-top:  solid var(--seconday-color);
-    border-bottom: solid var(--seconday-color);
+    border-top:  solid var(--color-primary);
+    border-bottom: solid var(--color-primary);
     margin: 2rem auto;
     padding: 0.5rem 1rem;
     width: 250px;
@@ -255,7 +281,7 @@ h3 {
     flex: 0 0 100%;
     color: black;
     background-color: white;
-    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 25%);
+    box-shadow: 0.25rem 0.10rem 1rem rgb(0 0 0 / 25%);
 }
 .card2 figcaption{
     padding: 0.8rem;
@@ -273,10 +299,11 @@ h3 {
 }
 
 .card {
-    background-color: rgb(22, 20, 25);
+    background-color: whitesmoke;
     border-radius: 5%;
     transition: transform .5s;
     flex: 0 0 100%;
+
 }
 
 .card img {
@@ -287,22 +314,18 @@ h3 {
 .card figcaption {
     font-size: 20px;
     margin: 1rem;
-    color:var(--seconday-color);
+    color: black;
     font-weight: bold;
 }
 
-.card h1 {
-    color:var(--seconday-color);
-}
 
-.card p {
-    color: white;
-}
+
 
 .card:hover {
     cursor: pointer;
-    transform: scale(1.02);
-    opacity: .9;
+    transform: scale(1.18);
+    transition: transform 1s;
+   
 }
 
 .card2:hover {
@@ -353,7 +376,7 @@ h3 {
 
 .footer {
   
-    background-color: rgb(36, 31, 31);
+    background-color: var(--color-fondo);
     color: white;
     padding: 4.5rem;
     text-align: center;
@@ -396,10 +419,11 @@ h3 {
 }
 
 .btn-cv {
-    background-color:white;
+    background-color:var(--color-primary);
+    color: white;
 }
 .btn-show{
-    background-color: var(--seconday-color);
+    background-color: var(--color-primary);
     color: white;
 }
 .menu-footer{
