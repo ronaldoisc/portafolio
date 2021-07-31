@@ -272,11 +272,12 @@ h1,h5{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    padding: 2rem;
+    padding: 2rem; 
 }
 
 .card2 {
-   height: 460px;
+   
+    height: 250px;
     transition: transform .5s;
     flex: 0 0 100%;
     color: black;
@@ -295,16 +296,18 @@ h1,h5{
 .card2 img {
     width: 100%;
     object-fit: fill;
-    height: 50%;
+  
+    height: 100%;
 }
 
 .card {
     background-color: whitesmoke;
     border-radius: 5%;
-    transition: transform .5s;
+   
     flex: 0 0 100%;
+    border-bottom: 7px solid var(--color-primary);
 
-}
+} 
 
 .card img {
     border-radius: 5%;
@@ -320,15 +323,18 @@ h1,h5{
 
 .card h2{
     color: black;
-}
+} 
 
+
+.card{
+    transition: background-color 1s;
+}
 
 .card:hover {
     cursor: pointer;
-    transform: scale(1.18);
-    transition: transform 1s;
-   
+    background-color: var(--grayColor);  
 }
+
 
 .card2:hover {
     cursor: pointer;
@@ -347,7 +353,7 @@ h1,h5{
 
 @media (min-width: 768px) {
     .card {
-        flex: 0 0 100%;
+        flex: 0 0 33.333333333333333333333333333333%;
     }
     .card2 {
         flex: 0 0 33.333333333333333333333333333333%;
@@ -356,9 +362,10 @@ h1,h5{
 
 @media (min-width: 992px) {
     .card {
-        flex: 0 0 25%;
+        flex: 0 0 23%;
     }
     .card2 {
+        /* width: 200px; */
         flex: 0 0 25%;
     }
 }
@@ -403,8 +410,14 @@ h1,h5{
 }
 .social-media-footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;  
+}
+@media (min-width: 768px) {
+    .social-media-footer{
+        flex-direction: column;
+    }
+    
 }
 .social-media-footer a{
     color: white;
@@ -430,8 +443,15 @@ h1,h5{
 }
 .menu-footer{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    justify-content: center;
 }
+@media (min-width: 768px) {
+    .menu-footer{
+        flex-flow: column;
+    } 
+}
+
 .menu-footer a{
     text-decoration: none;
     display: block;
@@ -441,4 +461,10 @@ h1,h5{
     transition: transform .5s;
     cursor: pointer;
     color: white;
+}
+.projects-description{
+    margin: 0 auto;
+    width: 40%;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
 }
