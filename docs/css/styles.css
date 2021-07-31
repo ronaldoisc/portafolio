@@ -332,7 +332,7 @@ h1,h5{
 
 .card:hover {
     cursor: pointer;
-    background-color: var(--grayColor);  
+ 
 }
 
 
