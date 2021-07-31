@@ -464,7 +464,8 @@ h1,h5{
 }
 .projects-description{
     margin: 0 auto;
-    width: 40%;
+    width: 60%;
     font-family: var(--main-font);
     font-size: 1.2rem;
+    text-align: center;
 }
