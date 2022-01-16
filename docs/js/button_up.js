@@ -1,9 +1,12 @@
 const d = document;
 const w = window;
 export default function detectScrooll(btn) {
+   
     const $button = d.querySelector(btn);
 
     d.addEventListener("scroll", (e) => {
+
+
         if (w.scrollY > 300) {
             $button.classList.remove("btn-no-visible");
             $button.classList.add("btn-visible");
@@ -14,6 +17,7 @@ export default function detectScrooll(btn) {
         }
     });
     d.addEventListener("click", (e) => {
+      
         if (e.target.matches(btn)) {
             w.scrollTo({
                 behavior: "smooth",

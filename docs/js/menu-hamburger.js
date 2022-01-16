@@ -1,8 +1,12 @@
 export default function hamburgerMenu(panelBtn) {
-    const d = document;
-    d.addEventListener("click", (e) => {
+
+    // let btn=document.getElementById(panelBtn);
+   
+    document.addEventListener("click", (e) => {
+
       
         if (e.target.matches(".icono")) {
+          
             
             document.querySelector(".menu").classList.toggle("active");
 
